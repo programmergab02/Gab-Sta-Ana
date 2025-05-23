@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Program Dashboard</title>
+    <style>
+    body {
+        margin: 0;
+        font-family: 'Comfortaa', cursive, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #e0f2fe; /* Light blue for the background */
+        color: #333;
+    }
+
+    header {
+        background-color: #87ceeb; /* Sky blue */
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 26px;
+        font-family: 'Times New Roman', Times, serif;
+        border-bottom: 2px solid #add8e6;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        margin-bottom: 5px;
+    }
+
+    header p {
+        font-size: 1.1em;
+        color: #f0f8ff;
+    }
+
+    .container {
+        display: flex;
+        flex: 1;
+    }
+
+    .sidebar {
+        width: 200px;
+        background-color: #00509E; /* Medium blue for sidebar */
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border-right: 3px solid #0074D9; /* Bright blue border */
+    }
+
+    .sidebar p {
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .sidebar p:hover {
+        color: #1E90FF; /* Light blue hover */
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 150px);
+        gap: 15px;
+        padding: 20px;
+        flex: 1;
+        background-color: #f0f8ff; /* Light neutral tone */
+    }
+
+    .box {
+        background-color: #0074D9; /* Bright blue boxes */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+        flex-direction: column;
+        text-align: center;
+        color: white; /* White text inside boxes */
+        transition: background-color 0.3s ease;
+    }
+
+    .box:hover {
+        background-color: #00509E; /* Darker blue on hover */
+    }
+
+    .contact-form {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h2 {
+        margin-bottom: 20px;
+        color: #4682b4;
+    }
+
+    .contact-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .contact-form textarea {
+        resize: vertical;
+    }
+
+    .contact-form button {
+        background-color: #4682b4;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+        background-color: #3672a4;
+    }
+
+    footer {
+        background-color: #87ceeb;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-top: 2px solid #add8e6;
+    }
+</style>
+
+</head>
+<body>
+    <header>Push Pull Leg Split</header>
+    <div class="container">
+        <div class="sidebar">
+            <p>Menu</p>
+            <p>Program</p>
+            <p>Routine</p>
+            <p>Settings</p>
+        </div>
+        <div class="main-content">
+            <div class="box">Monday<br>Chest/Tricep </div>
+            <div class="box">Tuesday<br>Back/Bicep </div>
+            <div class="box">Wednesday<br>Legs/Shoulder </div>
+            <div class="box">Thursday<br>Chest/Back </div>
+            <div class="box">Friday<br>Back/Bicep </div>
+            <div class="box">Saturday<br>Leg/Abs </div>
+        </div>
+    </div>
+</body>
+</html>

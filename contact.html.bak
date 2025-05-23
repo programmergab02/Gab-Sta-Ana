@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: 'Comfortaa', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f2fe;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #87ceeb;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #add8e6;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 1.1em;
+            color: #f0f8ff;
+        }
+        nav {
+            background-color: #add8e6;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #b0e0e6;
+        }
+        nav a {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 5px 10px;
+            text-decoration: none;
+            color: #333;
+            border-radius: 25px;
+            background-color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #b0e0e6;
+        }
+        main {
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #4682b4;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: calc(100% - 22px); 
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+        .contact-form textarea {
+            resize: vertical; 
+        }
+        .contact-form button {
+            background-color: #4682b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #3672a4;
+        }
+        .contact-info {
+            margin-top:20px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info h2 {
+            margin-bottom: 20px;
+            color: #4682b4;
+        }
+        .map-container {
+            margin-top: 40px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #87ceeb;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #add8e6;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Gab Sta Ana</h1>
+        <p>Certified Web Designer</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="sample8.html">Dashboard</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <main>
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form action="#" method="post"> 
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: gabstanne01@gmail.com</p>
+            <p>Phone: 09277355374</p>
+            <p>Address: 123 Main Street, Manila City, Philippines</p>
+            <p>LinkedIn: <a href="#">staanagablinkedin</a></p>
+            <p>Github: <a href="#">staanagabgithub</a></p>
+        </div>
+        
+        
+        <div class="map-container">
+            <h2>How to Get Here</h2>
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.212726062354!2d120.9711975!3d14.5982695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a1d58c9d39f2db%3A0x697fd87e0c4f5eaf!2s123%20Main%20Street%2C%20Manila%20City%2C%20Philippines!5e0!3m2!1sen!2sus!4v1625723684711!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gab Sta Ana. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

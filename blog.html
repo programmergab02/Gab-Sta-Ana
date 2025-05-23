@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gab Sta Ana's Blog</title>
+    <style>
+        body {
+            font-family: 'Comfortaa', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f2fe;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #87ceeb;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #add8e6;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 1.1em;
+            color: #f0f8ff;
+        }
+        nav {
+            background-color: #add8e6;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #b0e0e6;
+        }
+        nav a {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 5px 10px;
+            text-decoration: none;
+            color: #333;
+            border-radius: 25px;
+            background-color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #b0e0e6;
+        }
+        main {
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .blog-posts {
+            flex: 2;
+            min-width: 300px; 
+            margin-right: 20px;
+            flex-grow: 1; 
+        }
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+            background-color: #fff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .post h2 {
+            margin-bottom: 10px;
+            color: #4682b4;
+        }
+        .post a {
+            color: #4682b4;
+            text-decoration: none;
+        }
+        .post a:hover {
+            text-decoration: underline;
+        }
+        .sidebar h2 {
+            margin-bottom: 15px;
+            color: #4682b4;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            color: #333;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            color: #4682b4;
+        }
+        footer {
+            background-color: #87ceeb;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #add8e6;
+        }
+
+        @media (max-width: 768px) {
+            .blog-posts {
+                margin-right: 0;
+                width: 100%;
+            }
+            .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Gab Sta Ana</h1>
+        <p>Certified Web Designer</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="sample8.html">Dashboard</a>
+		<a href="gallery.html">Gallery</a>
+    </nav>
+
+    <main>
+        <div class="blog-posts">
+            <div class="post">
+                <h2>Beginner's Guide to HTML5 Semantic Tags</h2>
+                <p>Learn the importance of using semantic HTML5 tags for better structure and accessibility...</p>
+                <a href="semantic-tags.html">Read More</a>
+            </div>
+
+            <div class="post">
+                <h2>CSS Flexbox vs. Grid: Which Should You Use?</h2>
+                <p>Explore the differences between Flexbox and Grid and when to use each for layout design...</p>
+                <a href="flexbox-grid.html">Read More</a>
+            </div>
+
+            <div class="post">
+                <h2>Creating Responsive Navigation Menus with CSS</h2>
+                <p>A step-by-step tutorial on building mobile-friendly navigation menus using CSS...</p>
+                <a href="responsive-nav.html">Read More</a>
+            </div>
+
+            <div class="post">
+                <h2>My Favorite Web Design Tools and Resources</h2>
+                <p>Discover my go-to tools and resources for web design and development...</p>
+                <a href="tools-resources.html">Read More</a>
+            </div>
+
+            <div class="post">
+                <h2>The Future of Web Design: Trends to Watch in 2024</h2>
+                <p>Explore the emerging trends that will shape the future of web design...</p>
+                <a href="web-design-trends.html">Read More</a>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">HTML & CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Web Design Trends</a></li>
+                <li><a href="#">Tools & Resources</a></li>
+                <li><a href="#">Responsive Design</a></li>
+            </ul>
+
+            <h2>Recent Posts</h2>
+            <ul>
+                <li><a href="semantic-tags.html">HTML5 Semantic Tags</a></li>
+                <li><a href="flexbox-grid.html">Flexbox vs. Grid</a></li>
+                <li><a href="responsive-nav.html">Responsive Menus</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
